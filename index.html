@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketingAI Go-Live Checklist</title>
+    <meta name="description" content="Your personalized marketing system go-live checklist â€” understand what MarketingAI delivers in 3 systems, step-by-step.">
+
+    <!-- Google AdSense (lesson #17) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7076137753154472"
+        crossorigin="anonymous"></script>
+
+    <!-- Vercel Analytics + Speed Insights (lesson #20) -->
+    <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script>window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };</script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            color: #10b981;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            color: #666;
+            font-size: 0.95em;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .success-message {
+            background-color: #d1fae5;
+            color: #065f46;
+            padding: 15px;
+            border-left: 4px solid #10b981;
+            margin-bottom: 25px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.2em;
+            color: #222;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background-color: #10b981;
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 0.9em;
+            flex-shrink: 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #222;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 1em;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #10b981;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .field-description {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        .checklist-item {
+            background-color: #f9fafb;
+            padding: 15px;
+            border-left: 3px solid #e5e7eb;
+            margin-bottom: 12px;
+            border-radius: 4px;
+        }
+
+        .checklist-item strong {
+            color: #222;
+        }
+
+        .checklist-item em {
+            color: #666;
+            display: block;
+            margin-top: 4px;
+            font-size: 0.9em;
+        }
+
+        .highlight {
+            background-color: #fef3c7;
+            padding: 15px;
+            border-left: 4px solid #f59e0b;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .highlight strong {
+            color: #92400e;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 12px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            flex: 1;
+            min-width: 200px;
+            padding: 12px 24px;
+            font-size: 1em;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-submit {
+            background-color: #10b981;
+            color: white;
+        }
+
+        .btn-submit:hover {
+            background-color: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+        }
+
+        .btn-primary {
+            background-color: #3b82f6;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .system-overview {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        .system-overview h3 {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .system-overview ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .system-overview li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .system-overview li:before {
+            content: "âœ“";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
+            font-size: 0.85em;
+        }
+
+        .required {
+            color: #ef4444;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            button {
+                min-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ðŸš€ Go-Live Checklist</h1>
+            <p class="tagline">Your personalized marketing system â€” 3 components, step-by-step delivery</p>
+        </header>
+
+        <div class="success-message">
+            <strong>âœ“ Welcome to MarketingAI!</strong> You're now in early access. This checklist shows exactly what you'll get in your setup, and helps us understand your business so we can customise the system for you.
+        </div>
+
+        <div class="system-overview">
+            <h3>What MarketingAI Delivers (All Included â€” $149 AUD)</h3>
+            <ul>
+                <li><strong>System 1:</strong> AI Content Engine â€” 30-day content calendar ready to post</li>
+                <li><strong>System 2:</strong> Outbound Lead Sequence â€” personalised outreach templates for your ICP</li>
+                <li><strong>System 3:</strong> Email Nurture Sequence â€” automated follow-ups for enquiries and past clients</li>
+            </ul>
+        </div>
+
+        <form id="checklistForm">
+            <!-- Section 1: Context -->
+            <div class="section">
+                <div class="section-title">
+                    <div class="section-number">1</div>
+                    <div>About Your Business</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="industry">What industry are you in? <span class="required">*</span></label>
+                    <select id="industry" name="industry" required>
+                        <option value="">-- Select --</option>
+                        <option value="saas">SaaS / Software</option>
+                        <option value="agency">Marketing / Creative Agency</option>
+                        <option value="consulting">Consulting / Professional Services</option>
+                        <option value="ecommerce">E-Commerce</option>
+                        <option value="health">Health / Wellness</option>
+                        <option value="real-estate">Real Estate</option>
+                        <option value="trades">Trades / Contracting</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="audience">Who is your ideal client? <span class="required">*</span></label>
+                    <textarea id="audience" name="audience" placeholder="E.g., 'Small business owners in tech', 'Construction companies 5-50 employees', 'Individuals with chronic pain'" required></textarea>
+                    <p class="field-description">This helps us personalise your content calendar and outreach templates.</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="offer">What's your main offer / service? <span class="required">*</span></label>
+                    <input type="text" id="offer" name="offer" placeholder="E.g., 'Fractional CFO services', 'Personal training', 'Web design'" required>
+                    <p class="field-description">Your offer becomes the core of all 3 systems.</p>
+                </div>
+            </div>
+
+            <!-- Section 2: Timeline -->
+            <div class="section">
+                <div class="section-title">
+                    <div class="section-number">2</div>
+                    <div>Timeline & Decision</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="timeline">When do you need this live? <span class="required">*</span></label>
+                    <select id="timeline" name="timeline" required>
+                        <option value="">-- Select --</option>
+                        <option value="asap">ASAP (this week)</option>
+                        <option value="2weeks">Within 2 weeks</option>
+                        <option value="1month">Within 1 month</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </div>
+
+                <div class="highlight">
+                    <strong>ðŸ’¡ Reality check:</strong> You're investing $149 AUD once-off for a complete marketing system. The real cost is implementation â€” spending 30 min per week to use the content calendar, personalise the outreach, and manage the email nurture. That's the commitment that determines success, not the system itself.
+                </div>
+            </div>
+
+            <!-- Section 3: Contact -->
+            <div class="section">
+                <div class="section-title">
+                    <div class="section-number">3</div>
+                    <div>Confirm Your Details</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Your name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                    <p class="field-description">We'll send your personalised marketing system here, plus a setup guide.</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company name</label>
+                    <input type="text" id="company" name="company" placeholder="Optional">
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-submit">Complete Checklist & Get System</button>
+                <button type="reset" class="btn-primary" style="background-color: #e5e7eb; color: #666;">Clear Form</button>
+            </div>
+        </form>
+
+        <footer>
+            <p><strong>Next step:</strong> After you submit, you'll receive a setup confirmation email with:</p>
+            <ul style="list-style: none; padding: 10px 0;">
+                <li>âœ“ Your personalised 30-day content calendar</li>
+                <li>âœ“ Outreach templates for your ICP</li>
+                <li>âœ“ Email nurture sequence (ready to automate)</li>
+                <li>âœ“ Implementation guide</li>
+            </ul>
+            <p style="margin-top: 15px;">Questions? <a href="https://calendly.com/getmarketingai/30min" style="color: #10b981; text-decoration: underline;">Book a 30-min discovery call</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const form = document.getElementById('checklistForm');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Collect form data
+            const formData = new FormData(form);
+            const data = {
+                industry: formData.get('industry'),
+                audience: formData.get('audience'),
+                offer: formData.get('offer'),
+                timeline: formData.get('timeline'),
+                name: formData.get('name'),
+                email: formData.get('email'),
+                company: formData.get('company') || '(not provided)',
+                submitted_at: new Date().toISOString()
+            };
+
+            // Show success message
+            const originalButton = event.target.querySelector('button[type="submit"]');
+            originalButton.disabled = true;
+            originalButton.textContent = 'âœ“ Submitted!';
+            originalButton.style.backgroundColor = '#10b981';
+
+            setTimeout(() => {
+                // Redirect to payment
+                window.location.href = 'https://buy.stripe.com/cNi8wR0wZd8lePh01cbsc00';
+            }, 1500);
+
+            // Log submission (for founder to monitor)
+            console.log('Checklist submission:', data);
+        });
+    </script>
+</body>
+</html>
